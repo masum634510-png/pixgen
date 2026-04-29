@@ -2,9 +2,8 @@ import PhotoCard from '@/component/PhotoCard';
 import React from 'react';
 
 const AllPhoto = async () => {
-    const res = await fetch("http://localhost:3000/data.json");
+    const res = await fetch("https://pixgen-steel.vercel.app/data.json");
     const photos = await res.json()
-  
     
     return (
         <div>
